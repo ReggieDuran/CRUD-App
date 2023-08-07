@@ -11,3 +11,68 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.App {
+  padding: 30px;
+}
+
+.top-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.App tbody td:last-child {
+  justify-content: space-evenly;
+  display: flex;
+}
+
+.App tbody td:last-child button:last-child {
+  background-color: red;
+}
+
+.button-group {
+  padding: 30px 0 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.button-group button:last-child {
+  margin-left: 15px;
+  background-color: red;
+}
+
+.name-group {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+}
+
+.name-group > div {
+  flex-basis: 30%;
+}
+
+.personal-details,
+.bank-details,
+.company-details,
+.address-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin: 10px 0;
+}
+
+.personal-details > div,
+.bank-details > div,
+.company-details > div,
+.address-details > div {
+  flex-basis: 48%;
+}
+
+.new-user-drawer .mantine-Drawer-body > div,
+.edit-user-drawer .mantine-Drawer-body>div {
+  padding: 0.5rem 0 0;
+}
